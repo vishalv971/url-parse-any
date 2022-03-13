@@ -7,7 +7,7 @@ function buildSubDomain(subDomainArray) {
     return subDomainString.substring(0, subDomainString.length - 1);
 }
 
-function parse(url) {
+module.exports  = function parse(url) {
     let returnedUrlObject = {};
     let splitURLForProtocol = url.split("://");
     returnedUrlObject.url = splitURLForProtocol[0];
